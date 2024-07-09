@@ -1,0 +1,15 @@
+vs code extention 
+
+tailwind css intellisence
+
+
+cdn :-
+        <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+https://play.tailwindcss.com/
+
+
+https://tailblocks.cc/
+

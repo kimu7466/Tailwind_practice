@@ -1,0 +1,24 @@
+go to https://tailwindcss.com/docs/installation/using-postcss
+
+# steps on terminal =>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+step 1 :- run this command
+============== npm init 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+step 2 :- run this command add vite manually acoording to harry bhai 
+============== npm install -D tailwindcss postcss autoprefixer
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+step 3 :- run this command
+============== npx tailwindcss init
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+step 4 :- open this file """tailwind.config.js"""
+============== 
+
+

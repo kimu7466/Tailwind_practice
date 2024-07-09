@@ -1,0 +1,37 @@
+>>> npm init -y
+"this will create package.json"
+
+
+>>> npm install -D tailwindcss postcss autoprefixer vite
+"this will create node_modules and package-lock.json"
+
+>>> npx tailwindcss init -p
+"this will create tailwindcss.config.js and postcss.config.js"
+
+""
+then change content to this content: ["*"], in line 3 of tailwindcss.config.js
+
+and
+
+then in package.json file line 6,7,8 replace this
+
+  "scripts": {
+    "start": "vite"
+  },
+
+and 
+
+then create a css file like input.css add these 3 line given below in your css file
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+and then link it to your html file as you do normally
+
+    <link rel="stylesheet" href="input.css">
+
+tailwind will be applied as in the manner required for production. 
+
+""
+
