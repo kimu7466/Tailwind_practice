@@ -1,0 +1,12 @@
+Q : when to use apply directive and layer directive?
+
+ans: 
+
+only for those classes that you are gonna use repeatedly.
+specially for something special classes that are unique for your project 
+otherwise use classes only in HTML no matter how much messed up it looks like
+but this is the best way to use tailwind css    
+
+
+if we use apply directive unnecessarily that will require the efforts of a traditional workflow
+so do not shift maintainability in the css file unnecessarily
