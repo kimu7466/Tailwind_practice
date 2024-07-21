@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+
+.test_class{
+    @apply bg-black
+}
+
+@tailwind utilities;
+
+
+@layer components{ 
+    /* 
+    this way is layer directive this will automatically add the classes just after the components layer 
+    for example box and btn classes are added in last but when we check sources the test_class will be added after the btn and box
+    this is required to maintain the sequence and override the classes predefined class like we did for the red button 
+    */
+
+    .box{
+            @apply bg-pink-500 h-[100vh] flex justify-center items-center 
+    }
+        
+    .btn {
+            @apply p-4 bg-green-500 rounded-2xl hover:bg-green-600 hover:text-white
+        }
+
+}

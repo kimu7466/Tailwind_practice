@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 
+/* all classes must be defined between components layer and utilities layer  */
 .box{
     @apply bg-pink-500 h-[100vh] flex justify-center items-center 
 }
