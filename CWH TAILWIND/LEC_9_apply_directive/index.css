@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
+
+.box{
+    @apply bg-pink-500 h-[100vh] flex justify-center items-center 
+}
+    
+.btn {
+        @apply p-4 bg-green-500 rounded-2xl hover:bg-green-600 hover:text-white
+    }
+
+    /* write this in last to override the inline classes in html file for example red button */
 @tailwind utilities;
