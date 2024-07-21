@@ -7,7 +7,14 @@ module.exports = {
       spacing:{
         13: '3.25rem',
         15: '3.75rem'
+      },
+      fontSize:
+      {'10xl': ['9rem', { lineHeight: '1.2' }],
+      },
+      screens: {
+        xsm: '500px',
       }
+  
       //
     },
   },
