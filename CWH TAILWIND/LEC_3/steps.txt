@@ -35,3 +35,16 @@ tailwind will be applied as in the manner required for production.
 
 ""
 
+
+
+
+NOTE :- {if you copy complete setup run the command below
+
+"npm i"
+
+yes only "npm i" will do it the job...}
+
+
+
+
+

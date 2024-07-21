@@ -1,0 +1,29 @@
+tailwind css se responsive design banane k liye sabse pehle kisi bhi breakpoint ka use kiye bina sabse choti screen ka design teyar kare
+
+
+uske baad 
+
+Breakpoint prefix	|| Minimum width || CSS
+sm	                || 640px	     || @media (min-width: 640px) { ... }
+md	                || 768px	     || @media (min-width: 768px) { ... }
+lg	                || 1024px	     || @media (min-width: 1024px) { ... }
+xl	                || 1280px	     || @media (min-width: 1280px) { ... }
+2xl	                || 1536px	     || @media (min-width: 1536px) { ... }
+
+in breakpoints ka use kar k different screen sizes k liye design karain 
+
+note :- hum agar chahain to in breakpoints ki values ko bhi change kar sakte hain or sath hi agar new breakpoint add karna chate hain kisi custom projects k liye to add bhi kar sakte hain...
+
+
+responsive practice:::
+
+practice 1:
+different bg on different breakpoints
+
+practice 2:
+different different text sizes on different breakpoints
+
+practice 3:
+hidden and block on different breakpoints
+
+
