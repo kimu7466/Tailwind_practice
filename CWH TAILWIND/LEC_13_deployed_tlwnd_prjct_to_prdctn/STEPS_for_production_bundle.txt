@@ -1,0 +1,31 @@
+we are already using vite
+
+so we can use vite build for production. 
+note :- google it for more info "vite build for production"
+or go to this link "https://vitejs.dev/guide/build"
+
+add the script given below in package.json
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
+
+make sure to give proper url using / of your stylesheets
+for examples :-     / before style.css
+
+<link rel="stylesheet" href="style.css">
+                                ||
+                                \/
+<link rel="stylesheet" href="/style.css">
+
+note :- if any error comes up add of remove first / of the path it works for now :-{
+  Refused to apply style from 'http://127.0.0.1:5500/assets/index-uwX8pBEf.css' because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is enabled.
+
+  i encountered the error above strict MIME checking related but removing / resolved my problem
+}
+
+then run the command 
+npm run build 
+this will create a folder named "dist" with ready to deploy html and required assets
+
+if you want to change anything you need to run "npm run build" command again. 
