@@ -18,189 +18,328 @@
     />
     <title>Microsoft – Cloud, Computers, Apps &amp; Gaming</title>
   </head>
-  <body>
-    <div class="navbar flex justify-between items-center lg:mx:my-3 h-12">
+  <body class="bg-gray-400">
+    <div class="mx-auto">
       <div
-        class="first flex justify-center items-center lg:justify-end md:order-2 lg:w-full text-right"
+        class="navbar bg-white flex justify-between items-center xl:mx:my-3 h-12 w-full"
       >
-        <div class="hamburger px-4 cursor-pointer md:hidden">
-          <!-- class add inline-block for this commented menu bars -->
-          <!--  <div class="line h-0.5 w-6 my-1 bg-black"></div>
-                <div class="line h-0.5 w-6 my-1 bg-black"></div>
-                <div class="line h-0.5 w-6 my-1 bg-black"></div> -->
-          <div class="">
-            <i class="fa-solid fa-bars" id="menu_icon"></i>
+        <div
+          class="first flex justify-center items-center xl:justify-end md:order-2 xl:w-full text-right"
+        >
+          <div class="hamburger px-4 cursor-pointer md:hidden">
+            <!-- class add inline-block for this commented menu bars -->
+            <!--  <div class="line h-0.5 w-6 my-1 bg-black"></div>
+    <div class="line h-0.5 w-6 my-1 bg-black"></div>
+    <div class="line h-0.5 w-6 my-1 bg-black"></div> -->
+            <div class="">
+              <i class="fa-solid fa-bars" id="menu_icon"></i>
+            </div>
+            <!-- <div class="xmark hidden">
+      <i class="hidden fa-solid fa-xmark"></i>
+    </div> -->
           </div>
-          <!-- <div class="xmark hidden">
-            <i class="hidden fa-solid fa-xmark"></i>
-          </div> -->
+
+          <div class="hidden md:block">
+            <ul class="text-xs">
+              <li class="mx-2 hover:border-b-2 border-blue-700 md:w-28">
+                <a href="#"
+                  >All Microsoft<i class="mx-2 fa-solid fa-caret-down fa-sm"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="search px-2 flex">
+            <label class="hidden text-xs px-2 xl:block" for="">search</label>
+            <i
+              class="fa-solid fa-magnifying-glass fa-flip-horizontal"
+              style="color: #000000"
+            ></i>
+          </div>
         </div>
 
-        <div class="hidden md:block">
-          <ul class="text-xs">
-            <li class="mx-2 hover:border-b-2 border-blue-600 md:w-28">
-              <a href="#"
-                >All Microsoft<i class="mx-2 fa-solid fa-caret-down fa-sm"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
+        <div class="blank hidden md:block w-full order-1"></div>
 
-        <div class="search px-2 flex">
-          <label class="hidden text-xs px-2 lg:block" for="">search</label>
-          <i
-            class="fa-solid fa-magnifying-glass fa-flip-horizontal"
-            style="color: #000000"
-          ></i>
-        </div>
-      </div>
+        <div class="second flex justify-between items-center p-2">
+          <div class="logo w-[6.5rem] md:w-36 md:px-4">
+            <img
+              alt=""
+              itemprop="logo"
+              class="c-image"
+              src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31"
+              role="presentation"
+              aria-hidden="true"
+              style="overflow-x: visible"
+            />
+          </div>
 
-      <div class="second flex justify-between items-center p-2-1">
-        <div class="logo w-[6.5rem] md:w-36 md:px-4">
-          <img
-            alt=""
-            itemprop="logo"
-            class="c-image"
-            src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31"
-            role="presentation"
-            aria-hidden="true"
-            style="overflow-x: visible"
-          />
+          <div
+            id="menu"
+            class="menu hidden md:block bg-white md:static absolute inset-0 w-full translate-y-11 md:translate-y-0 h-fit c-translate-x-full"
+          >
+            <ul
+              class="md:flex md:text-xs [&>*]:p- md:justify-center md:items-center text-md font-thin space-y-4 md:space-y-0"
+            >
+              <li
+                class="mx-3 m-1 hover:border-b-2 border-blue-700 md:text-right"
+              >
+                <a href="#">Microsoft 365</a>
+              </li>
+              <hr />
+              <li class="mx-3 m-1 hover:border-b-2 border-blue-700">
+                <a href="#">Teams</a>
+              </li>
+              <hr />
+              <li class="mx-3 m-1 hover:border-b-2 border-blue-700">
+                <a href="#">Copilot</a>
+              </li>
+              <hr />
+              <li
+                class="mx-3 m-1 hover:border-b-2 border-blue-700 block md:hidden xl:block"
+              >
+                <a href="#">Windows</a>
+              </li>
+              <hr />
+              <li
+                class="mx-3 m-1 hover:border-b-2 border-blue-700 block md:hidden xl:block"
+              >
+                <a href="#">Surface</a>
+              </li>
+              <hr />
+              <li
+                class="mx-3 m-1 hover:border-b-2 border-blue-700 block md:hidden xl:block"
+              >
+                <a href="#">Xbox</a>
+              </li>
+              <hr />
+              <li
+                class="mx-3 m-1 hover:border-b-2 border-blue-700 block md:hidden xl:block"
+              >
+                <a href="#">Support</a>
+              </li>
+              <hr />
+              <li
+                class="mx-3 m-1 hover:border-b-2 w-20 border-blue-700 hidden md:block xl:hidden"
+              >
+                <a href="#">
+                  more
+                  <i class="mx-2 fa-solid fa-caret-down fa-sm"></i>
+                </a>
+              </li>
+              <!-- <hr /> -->
+              <li
+                class="mx-3 m-1 hover:border-b-2 border-blue-700 flex justify-between items-center md:hidden"
+              >
+                <a href="#">Software </a>
+                <i class="mx-2 fa-solid fa-caret-down fa-sm"></i>
+              </li>
+              <hr />
+              <li
+                class="mx-3 m-1 hover:border-b-2 border-blue-700 flex justify-between items-center md:hidden"
+              >
+                <a href="#">PCs & Devices </a>
+                <i class="mx-2 fa-solid fa-caret-down fa-sm"></i>
+              </li>
+              <hr />
+              <li
+                class="mx-3 m-1 hover:border-b-2 border-blue-700 flex justify-between items-center md:hidden"
+              >
+                <a href="#">Entertainment </a>
+                <i class="mx-2 fa-solid fa-caret-down fa-sm"></i>
+              </li>
+              <hr />
+              <li
+                class="mx-3 m-1 hover:border-b-2 border-blue-700 flex justify-between items-center md:hidden"
+              >
+                <a href="#">Business </a>
+                <i class="mx-2 fa-solid fa-caret-down fa-sm"></i>
+              </li>
+              <hr />
+              <li
+                class="mx-3 m-1 hover:border-b-2 border-blue-700 flex justify-between items-center md:hidden"
+              >
+                <a href="#">Developer & IT </a>
+                <i class="mx-2 fa-solid fa-caret-down fa-sm"></i>
+              </li>
+              <hr />
+              <li
+                class="mx-3 m-1 hover:border-b-2 border-blue-700 flex justify-between items-center md:hidden"
+              >
+                <a href="#">Other </a>
+                <i class="mx-2 fa-solid fa-caret-down fa-sm"></i>
+              </li>
+              <hr />
+              <li
+                class="mx-3 m-1 hover:border-b-2 border-blue-700 block md:hidden"
+              >
+                <a href="#">View Sitemap</a>
+              </li>
+              <hr />
+            </ul>
+          </div>
         </div>
 
         <div
-          id="menu"
-          class="menu hidden md:block bg-white md:static absolute inset-0 w-full translate-y-14 md:translate-y-0 h-fit c-translate-x-full"
+          class="third flex justify-between items-center p-2-3 xl:w-fit order-3"
         >
-          <ul
-            class="md:flex md:text-xs [&>*]:p- md:justify-center md:items-center text-md font-thin space-y-4 md:space-y-0"
+          <div class="cart p-1 mx-2 cursor-pointer flex">
+            <label class="hidden text-xs px-2 xl:block" for="">Cart</label>
+            <i class="fa-solid fa-cart-shopping" style="color: #000000"></i>
+          </div>
+
+          <div class="account p-1 mx-2 cursor-pointer flex">
+            <label class="hidden text-xs px-2 xl:block w-16 text-right" for=""
+              >Sign in</label
+            >
+            <i class="fa-solid fa-user-plus" style="color: #000000"></i>
+          </div>
+        </div>
+      </div>
+      <hr />
+
+      <div
+        class="slider flex flex-col-reverse xl:flex-row m bg-[#ffffff] xl:items-center mt-1 w-full xl:relative xl:h-fit"
+      >
+        <div
+          class="left m-2 flex flex-col justify-center max-w-[50rem] items-start xl:z-10 xl:absolute left-14 mg bg-white xl:w-[36rem] xl:px-10 xl:py-6"
+        >
+          <button
+            href="#"
+            class="bg-yellow-500 text-md px-2 py-1 font-semibold m-2"
           >
-            <li
-              class="mx-3 m-1 hover:border-b-2 border-blue-600 md:w-24 md:text-right"
-            >
-              <a href="#">Microsoft 365</a>
-            </li>
-            <hr />
-            <li class="mx-3 m-1 hover:border-b-2 border-blue-600">
-              <a href="#">Teams</a>
-            </li>
-            <hr />
-            <li class="mx-3 m-1 hover:border-b-2 border-blue-600">
-              <a href="#">Copilot</a>
-            </li>
-            <hr />
-            <li class="mx-3 m-1 hover:border-b-2 border-blue-600">
-              <a href="#">Windows</a>
-            </li>
-            <hr />
-            <li
-              class="mx-3 m-1 hover:border-b-2 border-blue-600 block md:hidden lg:block"
-            >
-              <a href="#">Surface</a>
-            </li>
-            <hr />
-            <li
-              class="mx-3 m-1 hover:border-b-2 border-blue-600 block md:hidden lg:block"
-            >
-              <a href="#">Xbox</a>
-            </li>
-            <hr />
-            <li
-              class="mx-3 m-1 hover:border-b-2 border-blue-600 block md:hidden lg:block"
-            >
-              <a href="#">Support</a>
-            </li>
-            <hr />
-            <li
-              class="mx-3 m-1 hover:border-b-2 w-20 border-blue-600 hidden md:block lg:hidden"
-            >
-              <a href="#">
-                more
-                <i class="mx-2 fa-solid fa-caret-down fa-sm"></i>
-              </a>
-            </li>
-            <!-- <hr /> -->
-            <li
-              class="mx-3 m-1 hover:border-b-2 border-blue-600 flex justify-between items-center md:hidden"
-            >
-              <a href="#">Software </a>
-              <i class="mx-2 fa-solid fa-caret-down fa-sm"></i>
-            </li>
-            <hr />
-            <li
-              class="mx-3 m-1 hover:border-b-2 border-blue-600 flex justify-between items-center md:hidden"
-            >
-              <a href="#">PCs & Devices </a>
-              <i class="mx-2 fa-solid fa-caret-down fa-sm"></i>
-            </li>
-            <hr />
-            <li
-              class="mx-3 m-1 hover:border-b-2 border-blue-600 flex justify-between items-center md:hidden"
-            >
-              <a href="#">Entertainment </a>
-              <i class="mx-2 fa-solid fa-caret-down fa-sm"></i>
-            </li>
-            <hr />
-            <li
-              class="mx-3 m-1 hover:border-b-2 border-blue-600 flex justify-between items-center md:hidden"
-            >
-              <a href="#">Business </a>
-              <i class="mx-2 fa-solid fa-caret-down fa-sm"></i>
-            </li>
-            <hr />
-            <li
-              class="mx-3 m-1 hover:border-b-2 border-blue-600 flex justify-between items-center md:hidden"
-            >
-              <a href="#">Developer & IT </a>
-              <i class="mx-2 fa-solid fa-caret-down fa-sm"></i>
-            </li>
-            <hr />
-            <li
-              class="mx-3 m-1 hover:border-b-2 border-blue-600 flex justify-between items-center md:hidden"
-            >
-              <a href="#">Other </a>
-              <i class="mx-2 fa-solid fa-caret-down fa-sm"></i>
-            </li>
-            <hr />
-            <li
-              class="mx-3 m-1 hover:border-b-2 border-blue-600 block md:hidden"
-            >
-              <a href="#">View Sitemap</a>
-            </li>
-            <hr />
+            New
+          </button>
+          <h1 class="text-2xl m-2 font-semibold">Meet surface Pro</h1>
+          <p class="text-base m-2 max-w-[36rem]">
+            This laptop's unrivalled flexibility and AI features like Live
+            Captions and Cocreator, enable you to do more than you ever
+            imagined.
+          </p>
+          <button
+            class="m-2 bg-blue-700 text-white text-md font-semibold px-4 py-2"
+          >
+            Learn More
+          </button>
+          <div>
+            <h1>
+              <div></div>
+            </h1>
+          </div>
+        </div>
+        <div class="right h-fit w-full overflow-hidden">
+          <img
+            class="xl:hidden w-full"
+            src="assets/images/dark-sm.avif"
+            alt=""
+          />
+          <img
+            class="hidden xl:block"
+            src="assets/images/dark-lg.avif"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="promo bg-white space-y-2 grid grid-cols-2 grid-rows-3 lg:grid-cols-4 lg:grid-rows-1 md:grid-rows-2 md:grid-cols-3">
+        <div class="part flex m-4 flex-col space-y-2 items-center col-span-2 md:col-span-1">
+          <img class="w-10" src="assets/images/ic1.svg" alt="">
+          <span class="text-blue-700 underline font-semibold">Choose your Microsoft 365</span>
+        </div>
+        <div class="part flex m-4 flex-col space-y-2 items-center md:col-span-1">
+          <img class="w-10" src="assets/images/ic2.svg" alt="">
+          <span class="text-blue-700 underline font-semibold">Shop Xbox</span>
+        </div>
+        <div class="part flex m-4 flex-col space-y-2 items-center md:col-span-1">
+          <img class="w-10" src="assets/images/ic3.svg" alt="">
+          <span class="text-blue-700 underline font-semibold">Get Windows 11</span>
+        </div>
+        <div class="part flex m-4 flex-col space-y-2 items-center col-span-2 md:col-span-3 lg:col-span-1">
+          <img class="w-10" src="assets/images/ic4.svg" alt="">
+          <span class="text-blue-700 underline font-semibold">Explore Surface devices</span>
+        </div>
+      </div>
+
+      <footer class="bg-gray-100 px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:px-20 space-x-5 space-y-10 xl:grid-cols-6 xl:py-8 xl:px-10 xl:gap-1">
+
+        <div class="part mx-5 mt-10">
+          <h1 class="font-bold py-1">What's new</h1>
+          <ul class="text-xs [&>*]:py-2">
+            <li class="hover:underline"><a href="#">Surface Pro</a></li>
+            <li class="hover:underline"><a href="#">Surface Laptop</a></li>
+            <li class="hover:underline"><a href="#">Microsoft Copilot</a></li>
+            <li class="hover:underline"><a href="#">Microsoft 365</a></li>
+            <li class="hover:underline"><a href="#">Windows 11 apps</a></li>
           </ul>
         </div>
-      </div>
 
-      <div class="third flex justify-between items-center p-2-3 lg:w-fit">
-        <div class="cart p-1 mx-2 cursor-pointer flex">
-          <label class="hidden text-xs px-2 lg:block" for="">Cart</label>
-          <i class="fa-solid fa-cart-shopping" style="color: #000000"></i>
+        <div class="part">
+          <h1 class="font-bold py-1">Microsoft Store</h1>
+          <ul class="text-xs [&>*]:py-2">
+            <li class="hover:underline"><a href="#">Account profile</a></li>
+            <li class="hover:underline"><a href="#">Download Center</a></li>
+            <li class="hover:underline"><a href="#">Microsoft Store Support</a></li>
+            <li class="hover:underline"><a href="#">Returns</a></li>
+            <li class="hover:underline"><a href="#">Order tracking</a></li>            
+          </ul>
         </div>
 
-        <div class="account p-1 mx-2 cursor-pointer flex">
-          <label class="hidden text-xs px-2 lg:block w-16 text-right" for=""
-            >Sign in</label
-          >
-          <i class="fa-solid fa-user-plus" style="color: #000000"></i>
+        <div class="part">
+          <h1 class="font-bold py-1">Education</h1>
+          <ul class="text-xs [&>*]:py-2">
+            <li class="hover:underline"><a href="#">Microsoft in education</a></li>
+            <li class="hover:underline"><a href="#">Devices for education</a></li>
+            <li class="hover:underline"><a href="#">Microsoft Teams for Education</a></li>
+            <li class="hover:underline"><a href="#">Microsoft 365 Education</a></li>
+            <li class="hover:underline"><a href="#">Office Education</a></li>
+            <li class="hover:underline"><a href="#">Educator training and development</a></li>
+            <li class="hover:underline"><a href="#">Deals for students and parents</a></li>
+            <li class="hover:underline"><a href="#">Azure for students</a></li>
+          </ul>
         </div>
-      </div>
-    </div>
-    <hr />
 
-    <div class="slider flex flex-col-reverse md:flex-row bg bg-[#ffffff] mt-1 w-full">
-            <div class="left m-2 flex flex-col justify-center items-start">
-                <button href="#" class="bg-yellow-500 text-md px-2 py-1 font-semibold m-2">New</button>
-                <h1 class="text-2xl m-2 font-semibold">Meet surface Pro</h1>
-                <p class="text-base m-2">This laptop's unrivalled flexibility and AI features like Live Captions and Cocreator, enable you to do more than you ever imagined.</p>
-                <button class="m-2 bg-blue-500 text-white text-md font-semibold px-4 py-2">Learn More</button>
-            </div>
-            <div class="right">
-                <img src="assets/images/dark-sm.avif" alt="">
-                <!-- <img src="assets/images/light-sm.avif" alt=""> -->
-            </div>
-    </div>
+        <div class="part">
+          <h1 class="font-bold py-1">Business</h1>
+          <ul class="text-xs [&>*]:py-2">
+            <li class="hover:underline"><a href="#">Microsoft Cloud</a></li>
+            <li class="hover:underline"><a href="#">Microsoft Security</a></li>
+            <li class="hover:underline"><a href="#">Azure</a></li>
+            <li class="hover:underline"><a href="#">Dynamics 365</a></li>
+            <li class="hover:underline"><a href="#">Microsoft 365</a></li>
+            <li class="hover:underline"><a href="#">Microsoft Advertising</a></li>
+            <li class="hover:underline"><a href="#">Copilot for Microsoft 365</a></li>
+            <li class="hover:underline"><a href="#">Microsoft Teams</a></li>
+          </ul>
+        </div>
+        
+        <div class="part">
+          <h1 class="font-bold py-1">Developer & IT</h1>
+          <ul class="text-xs [&>*]:py-2">
+            <li class="hover:underline"><a href="#">Developer Center</a></li>
+            <li class="hover:underline"><a href="#">Documentation</a></li>
+            <li class="hover:underline"><a href="#">Microsoft Learn</a></li>
+            <li class="hover:underline"><a href="#">Microsoft Tech Community</a></li>
+            <li class="hover:underline"><a href="#">Azure Marketplace</a></li>
+            <li class="hover:underline"><a href="#">AppSource</a></li>
+            <li class="hover:underline"><a href="#">Microsoft Power Platform</a></li>
+            <li class="hover:underline"><a href="#">Visual Studio</a></li>
+          </ul>
+        </div>
 
+        <div class="part">
+          <h1 class="font-bold py-1">Company</h1>
+          <ul class="text-xs [&>*]:py-2">
+            <li class="hover:underline"><a href="#">Careers</a></li>
+            <li class="hover:underline"><a href="#">About Microsoft</a></li>
+            <li class="hover:underline"><a href="#">Company news</a></li>
+            <li class="hover:underline"><a href="#">Privacy at Microsoft</a></li>
+            <li class="hover:underline"><a href="#">Investors</a></li>
+            <li class="hover:underline"><a href="#">Security</a></li>
+            <li class="hover:underline"><a href="#">Sustainability</a></li>
+          </ul>
+        </div>
+
+      </footer>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
