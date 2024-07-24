@@ -195,47 +195,124 @@
           </div>
         </div>
       </div>
+
       <hr />
 
-      <div
-        class="slider flex flex-col-reverse xl:flex-row m bg-[#ffffff] xl:items-center mt-1 w-full xl:relative xl:h-fit"
-      >
+      <div class="carousel">
+        <!-- Slider 1 -->
         <div
-          class="left m-2 flex flex-col justify-center max-w-[50rem] items-start xl:z-10 xl:absolute left-14 mg bg-white xl:w-[36rem] xl:px-10 xl:py-6"
+          class="slider flex flex-col-reverse xl:flex-row m bg-[#ffffff] xl:items-center mt-1 w-full xl:relative xl:h-fit"
         >
-          <button
-            href="#"
-            class="bg-yellow-500 text-md px-2 py-1 font-semibold m-2"
+          <div
+            class="left m-2 flex flex-col justify-center max-w-[50rem] items-start xl:z-10 xl:absolute left-14 mg bg-white xl:w-[36rem] xl:px-10 xl:py-6"
           >
-            New
-          </button>
-          <h1 class="text-2xl m-2 font-semibold">Meet surface Pro</h1>
-          <p class="text-base m-2 max-w-[36rem]">
-            This laptop's unrivalled flexibility and AI features like Live
-            Captions and Cocreator, enable you to do more than you ever
-            imagined.
-          </p>
-          <button
-            class="m-2 bg-blue-700 text-white text-md font-semibold px-4 py-2"
-          >
-            Learn More
-          </button>
-          <div>
-            <h1>
-              <div></div>
-            </h1>
+            <button
+              href="#"
+              class="bg-yellow-500 text-md px-2 py-1 font-semibold m-2"
+            >
+              New
+            </button>
+            <h1 class="text-2xl m-2 font-semibold">Meet Surface Pro</h1>
+            <p class="text-base m-2 h-24 max-w-[36rem]">
+              This laptop's unrivalled flexibility and AI features like Live
+              Captions and Cocreator, enable you to do more than you ever
+              imagined.
+            </p>
+            <button
+              class="m-2 bg-blue-700 text-white text-md font-semibold px-4 py-2"
+            >
+              Learn More
+            </button>
+          </div>
+          <div class="right h-fit w-full overflow-hidden">
+            <img
+              class="xl:hidden w-full"
+              src="assets/images/dark-sm.avif"
+              alt="Surface Pro"
+            />
+            <img
+              class="hidden xl:block w-full"
+              src="assets/images/dark-lg.avif"
+              alt="Surface Pro"
+            />
           </div>
         </div>
-        <div class="right h-fit w-full overflow-hidden">
+
+        <!-- Slider 2 -->
+        <div
+          class="slider hidden flex flex-col-reverse xl:flex-row m bg-[#ffffff] xl:items-center mt-1 w-full xl:relative xl:h-fit"
+        >
+          <div
+            class="left m-2 flex flex-col justify-center max-w-[50rem] items-start xl:z-10 xl:absolute left-14 mg bg-white xl:bg-transparent xl:w-[36rem] xl:px-10 xl:py-6"
+          >
+            <button
+              href="#"
+              class="bg-yellow-500 text-md px-2 py-1 font-semibold m-2"
+            >
+              New
+            </button>
+            <h1 class="text-2xl m-2 font-semibold">Meet Surface Laptop</h1>
+            <p class="text-base m-2 h-24 max-w-[36rem]">
+              Unlock AI features like Live Captions and Cocreator with this
+              exceptionally powerful laptop.
+            </p>
+            <button
+              class="m-2 bg-blue-700 text-white text-md font-semibold px-4 py-2"
+            >
+              Learn More
+            </button>
+          </div>
+          <div class="right h-fit w-full overflow-hidden">
+            <img
+              class="xl:hidden w-full"
+              src="assets/images/light-sm.avif"
+              alt="Surface Laptop"
+            />
+            <img
+              class="hidden xl:block w-full"
+              src="assets/images/light-lg.avif"
+              alt="Surface Laptop"
+            />
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls py-7 flex justify-center space-x-8 border">
           <img
-            class="xl:hidden w-full"
-            src="assets/images/dark-sm.avif"
-            alt=""
+            class="w-3 ml-8 hidden"
+            src="assets/images/play-solid.svg"
+            id="play"
+            alt="Play"
           />
           <img
-            class="hidden xl:block w-full"
-            src="assets/images/dark-lg.avif"
-            alt=""
+            class="w-3"
+            src="assets/images/pause-solid.svg"
+            id="pause"
+            alt="Pause"
+          />
+          <img
+            class="w-3"
+            src="assets/images/chevron-left-solid.svg"
+            id="prev"
+            alt="Previous"
+          />
+          <div class="position flex space-x-8">
+            <img
+              class="w-3"
+              src="assets/images/circle-solid.svg"
+              alt="Indicator"
+            />
+            <img
+              class="w-3"
+              src="assets/images/circle-regular.svg"
+              alt="Indicator"
+            />
+          </div>
+          <img
+            class="w-3 mr-8"
+            src="assets/images/chevron-right-solid.svg"
+            id="next"
+            alt="Next"
           />
         </div>
       </div>
@@ -278,7 +355,9 @@
       <div
         class="cards bg-white grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:px-16"
       >
-        <div class="card m-2 bg-white shadow-xl drop-shadow flex flex-col items-start">
+        <div
+          class="card m-2 bg-white shadow-xl drop-shadow flex flex-col items-start"
+        >
           <img class="w-full" src="assets/images/card1.avif" alt="" />
 
           <div
@@ -302,7 +381,9 @@
           </div>
         </div>
 
-        <div class="card m-2 bg-white shadow-xl drop-shadow flex flex-col items-start">
+        <div
+          class="card m-2 bg-white shadow-xl drop-shadow flex flex-col items-start"
+        >
           <img class="w-full" src="assets/images/card2.avif" alt="" />
 
           <div
@@ -323,7 +404,9 @@
           </div>
         </div>
 
-        <div class="card m-2 bg-white shadow-xl drop-shadow flex flex-col items-start">
+        <div
+          class="card m-2 bg-white shadow-xl drop-shadow flex flex-col items-start"
+        >
           <img class="w-full" src="assets/images/card3.webp" alt="" />
 
           <div
@@ -341,7 +424,9 @@
           </div>
         </div>
 
-        <div class="card m-2 bg-white shadow-xl drop-shadow flex flex-col items-start">
+        <div
+          class="card m-2 bg-white shadow-xl drop-shadow flex flex-col items-start"
+        >
           <img class="w-full" src="assets/images/card4.avif" alt="" />
 
           <div
@@ -412,14 +497,18 @@
       </div>
 
       <div class="business bg-white sm:mt-16">
-        <div class="title font-semibold text-2xl mx-2 lg:text-4xl lg:mx-16 lg:p-2 lg:py-5">
+        <div
+          class="title font-semibold text-2xl mx-2 lg:text-4xl lg:mx-16 lg:p-2 lg:py-5"
+        >
           For business
         </div>
 
         <div
           class="cards bg-white grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:px-16"
         >
-          <div class="card m-2 bg-white shadow-xl drop-shadow flex flex-col items-start">
+          <div
+            class="card m-2 bg-white shadow-xl drop-shadow flex flex-col items-start"
+          >
             <img class="w-full" src="assets/images/business1.avif" alt="" />
 
             <div
@@ -430,7 +519,7 @@
                   Surface for Business
                 </h1>
                 <p class="font-thin py-3">
-                  No matter what you do, there’s a Surface to help you do it. 
+                  No matter what you do, there’s a Surface to help you do it.
                 </p>
               </div>
               <button class="bg-blue-700 text-white font-semibold px-3 py-2">
@@ -439,7 +528,9 @@
             </div>
           </div>
 
-          <div class="card m-2 bg-white shadow-xl drop-shadow flex flex-col items-start">
+          <div
+            class="card m-2 bg-white shadow-xl drop-shadow flex flex-col items-start"
+          >
             <img class="w-full" src="assets/images/business2.avif" alt="" />
 
             <div
@@ -455,7 +546,9 @@
                   Copilot for Microsoft 365
                 </h1>
                 <p class="font-thin py-3">
-                  Save time and focus on the things that matter most with AI in Microsoft 365 for business.                 </p>
+                  Save time and focus on the things that matter most with AI in
+                  Microsoft 365 for business.
+                </p>
               </div>
               <button class="bg-blue-700 text-white font-semibold px-3 py-2">
                 Learn more
@@ -463,7 +556,9 @@
             </div>
           </div>
 
-          <div class="card m-2 bg-white shadow-xl drop-shadow flex flex-col items-start">
+          <div
+            class="card m-2 bg-white shadow-xl drop-shadow flex flex-col items-start"
+          >
             <img class="w-full" src="assets/images/business3.jpeg" alt="" />
 
             <div
@@ -472,18 +567,21 @@
               <div>
                 <h1 class="text-xl font-semibold lg:text-3xl">
                   Join the era of AI
-              </h1>
+                </h1>
                 <p class="font-thin py-3">
-                  Create, communicate, and code with the latest Microsoft AI solutions.                 </p>
+                  Create, communicate, and code with the latest Microsoft AI
+                  solutions.
+                </p>
               </div>
               <button class="bg-blue-700 text-white font-semibold px-3 py-2">
-                
-                Explore AI solutions                            
+                Explore AI solutions
               </button>
             </div>
           </div>
 
-          <div class="card m-2 bg-white shadow-xl drop-shadow flex flex-col items-start">
+          <div
+            class="card m-2 bg-white shadow-xl drop-shadow flex flex-col items-start"
+          >
             <img class="w-full" src="assets/images/business4.webp" alt="" />
 
             <div
@@ -491,12 +589,14 @@
             >
               <div>
                 <h1 class="text-xl font-semibold lg:text-3xl">
-
                   Visual Studio 2022
                 </h1>
 
                 <p class="font-thin py-3">
-                  Get the most comprehensive IDE for .NET and C++ developers on Windows for building web, cloud, desktop, mobile apps, services and games.                 </p>
+                  Get the most comprehensive IDE for .NET and C++ developers on
+                  Windows for building web, cloud, desktop, mobile apps,
+                  services and games.
+                </p>
               </div>
 
               <button class="bg-blue-700 text-white font-semibold px-3 py-2">
@@ -507,19 +607,29 @@
         </div>
       </div>
 
-      <div class="social my-20">
-        <p class="mx-5">
-          Follow Microsoft
-        </p>
+      <div class="social my-20 sm:flex">
+        <p class="mx-5">Follow Microsoft</p>
         <div class="icons flex">
-          <img class="w-6 mx-4 h-6" src="assets/images/facebook-f-brands-solid.svg" alt="">
-          <img class="w-6 mx-4 h-6" src="assets/images/x-twitter-brands-solid.svg" alt="">
-          <img class="mx-4 h-6" src="assets/images/youtube-brands-solid.svg" alt="">
+          <img
+            class="w-6 mx-4 h-6"
+            src="assets/images/facebook-f-brands-solid.svg"
+            alt=""
+          />
+          <img
+            class="w-6 mx-4 h-6"
+            src="assets/images/x-twitter-brands-solid.svg"
+            alt=""
+          />
+          <img
+            class="mx-4 h-6"
+            src="assets/images/youtube-brands-solid.svg"
+            alt=""
+          />
         </div>
       </div>
 
       <footer
-        class="bg-gray-100 text-gray-500 px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:px-20 space-x-5 space-y-10 xl:grid-cols-6 xl:py-8 xl:px-10 xl:gap-1"
+        class="bg-gray-100 text-gray-500 px-6 grid grid-cols-1 grid-rows-6 sm:grid-cols-2 sm:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2 sm:px-20 space-x-5 space-y-10 xl:grid-cols-6 xl:grid-rows-1 xl:py-8 xl:px-10 xl:gap-1 [&>*]:w-fit"
       >
         <div class="part mx-5 mt-10">
           <h1 class="font-bold py-1">What's new</h1>
@@ -626,7 +736,7 @@
       <hr />
 
       <div
-        class="bottom bg-gray-100 text-xs flex flex-col md:flex-row md:items-center md:justify-between"
+        class="bottom bg-gray-100 text-gray-500 text-xs flex flex-col md:flex-row md:items-center md:justify-between"
       >
         <div class="left mx-4 [&>*]:w-fit [&>*]:px-2 [&>*]:py-3 lg:flex">
           <div class="flex space-x-2">
