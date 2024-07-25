@@ -1,13 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  menu_icon = document.getElementById("menu_icon");
-  menu = document.getElementById("menu");
-
-  menu_icon.addEventListener("click", () => {
-    menu_icon.classList.toggle("fa-bars");
-    menu_icon.classList.toggle("fa-xmark");
-    menu.classList.toggle("-translate-x-full");    
-  });
-
   const carousel = document.querySelector('.carousel');
   const slides = document.querySelectorAll('.slider');
   const playButton = document.getElementById('play');
@@ -27,12 +18,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function nextSlide() {
-    currentIndex = (currentIndex + 1) % slides.length;
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
     updateCarousel();
   }
 
   function prevSlide() {
-    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    currentIndex = (currentIndex + 1) % slides.length;
     updateCarousel();
   }
 

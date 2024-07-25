@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <div class="carousal-wrapper w-full overflow-hidden relative">
+      <div class="carousel flex transition-all duration-1000 ">
+        <!-- Slider 1 -->
+        <div class="slider min-w-full box-border flex flex-col-reverse xl:flex-row bg-[#ffffff] xl:items-center mt-1 w-full xl:relative xl:h-fit">
+          <div class="left m-2 flex flex-col justify-center max-w-[50rem] items-start xl:z-10 xl:absolute left-14 mg bg-white xl:w-[36rem] xl:px-10 xl:py-6">
+            <button class="bg-yellow-500 text-md px-2 py-1 font-semibold m-2">
+              New
+            </button>
+            <h1 class="text-2xl m-2 font-semibold">Meet Surface Pro</h1>
+            <p class="text-base m-2 h-24 max-w-[36rem]">
+              This laptop's unrivalled flexibility and AI features like Live
+              Captions and Cocreator, enable you to do more than you ever
+              imagined.
+            </p>
+            <button class="m-2 bg-blue-700 text-white text-md font-semibold px-4 py-2">
+              Learn More
+            </button>
+          </div>
+          <div class="right h-fit w-full">
+            <img class="xl:hidden w-full" src="assets/images/dark-sm.avif" alt="Surface Pro" />
+            <img class="hidden xl:block w-full" src="assets/images/dark-lg.avif" alt="Surface Pro" />
+          </div>
+        </div>
+    
+        <!-- Slider 2 -->
+        <div class="slider min-w-full box-border flex flex-col-reverse xl:flex-row bg-[#ffffff] xl:items-center mt-1 w-full xl:relative xl:h-fit">
+          <div class="left m-2 flex flex-col justify-center max-w-[50rem] items-start xl:z-10 xl:absolute left-14 mg bg-white xl:bg-transparent xl:w-[36rem] xl:px-10 xl:py-6">
+            <button class="bg-yellow-500 text-md px-2 py-1 font-semibold m-2">
+              New
+            </button>
+            <h1 class="text-2xl m-2 font-semibold">Meet Surface Laptop</h1>
+            <p class="text-base m-2 h-24 max-w-[36rem]">
+              Unlock AI features like Live Captions and Cocreator with this
+              exceptionally powerful laptop.
+            </p>
+            <button class="m-2 bg-blue-700 text-white text-md font-semibold px-4 py-2">
+              Learn More
+            </button>
+          </div>
+          <div class="right h-fit w-full overflow-hidden">
+            <img class="xl:hidden w-full" src="assets/images/light-sm.avif" alt="Surface Laptop" />
+            <img class="hidden xl:block w-full" src="assets/images/light-lg.avif" alt="Surface Laptop" />
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Controls -->
+    <div class="controls py-7 flex justify-center space-x-8 border h-20">
+      <img class="w-4 hover:scale-125 transition-all ml-8 hidden" src="assets/images/play-solid.svg" id="play" alt="Play" />
+      <img class="w-4 hover:scale-125 transition-all" src="assets/images/pause-solid.svg" id="pause" alt="Pause" />
+      <img class="w-3 hover:scale-125 hover:-translate-x-1 transition-all" src="assets/images/chevron-left-solid.svg" id="prev" alt="Previous" />
+      <div class="position flex space-x-8">
+        <img class="w-3" src="assets/images/circle-solid.svg" alt="Indicator" />
+        <img class="w-3" src="assets/images/circle-regular.svg" alt="Indicator" />
+      </div>
+      <img class="w-3 hover:scale-125 hover:translate-x-1 transition-all" src="assets/images/chevron-right-solid.svg" id="next" alt="Next" />
+    </div>
+    
+    <script>
+   
+   </script>
+    
+    <script src="carousel.js"></script>
+  </body>
+</html>

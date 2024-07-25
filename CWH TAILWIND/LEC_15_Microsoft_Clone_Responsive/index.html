@@ -40,7 +40,7 @@
           </div>
 
           <div class="hidden md:block">
-            <ul class="text-xs">
+            <ul class="text-xs lg:text-[.813rem]">
               <li class="mx-2 hover:border-b-2 border-blue-700 md:w-28">
                 <a href="#"
                   >All Microsoft<i class="mx-2 fa-solid fa-caret-down fa-sm"></i
@@ -50,7 +50,9 @@
           </div>
 
           <div class="search px-2 flex">
-            <label class="hidden text-xs px-2 xl:block" for="">search</label>
+            <label class="hidden text-xs lg:text-[.813rem] px-2 xl:block" for=""
+              >search</label
+            >
             <i
               class="fa-solid fa-magnifying-glass fa-flip-horizontal"
               style="color: #000000"
@@ -61,7 +63,7 @@
         <div class="blank hidden md:block w-full order-1"></div>
 
         <div class="second flex justify-between items-center p-2">
-          <div class="logo w-[6.5rem] md:w-36 md:px-4">
+          <div class="logo w-[6.5rem] md:w-36 md:px-4 lg:ms-5 xl:ms-14 lg:w-44">
             <img
               alt=""
               itemprop="logo"
@@ -75,13 +77,13 @@
 
           <div
             id="menu"
-            class="menu hidden md:block bg-white md:static absolute inset-0 w-full translate-y-11 md:translate-y-0 h-fit c-translate-x-full"
+            class="menu md:block bg-white md:static absolute inset-0 w-full translate-y-11 md:translate-y-0 h-fit -translate-x-full md:translate-x-0 transition-all md:border-none border-b-2 border-black"
           >
             <ul
-              class="md:flex md:text-xs [&>*]:p- md:justify-center md:items-center text-md font-thin space-y-4 md:space-y-0"
+              class="md:flex md:text-xs lg:text-[.813rem] [&>*]:p- md:justify-center md:items-center text-md font-thin space-y-4 md:space-y-0"
             >
               <li
-                class="mx-3 m-1 hover:border-b-2 border-blue-700 md:text-right"
+                class="mx-3 m-1 hover:border-b-2 border-blue-700 min-w-fit md:text-right"
               >
                 <a href="#">Microsoft 365</a>
               </li>
@@ -183,12 +185,16 @@
           class="third flex justify-between items-center p-2-3 xl:w-fit order-3"
         >
           <div class="cart p-1 mx-2 cursor-pointer flex">
-            <label class="hidden text-xs px-2 xl:block" for="">Cart</label>
+            <label class="hidden text-xs lg:text-[.813rem] px-2 xl:block" for=""
+              >Cart</label
+            >
             <i class="fa-solid fa-cart-shopping" style="color: #000000"></i>
           </div>
 
-          <div class="account p-1 mx-2 cursor-pointer flex">
-            <label class="hidden text-xs px-2 xl:block w-16 text-right" for=""
+          <div class="account p-1 mx-2 lg:me-12 xl:me-20 cursor-pointer flex">
+            <label
+              class="hidden text-xs lg:text-[.813rem] px-2 xl:block w-16 text-right"
+              for=""
               >Sign in</label
             >
             <i class="fa-solid fa-user-plus" style="color: #000000"></i>
@@ -197,124 +203,125 @@
       </div>
 
       <hr />
+      
+      <div class="carousal-wrapper w-full overflow-hidden relative">
+        <div class="carousel flex transition-all duration-1000 ">
+          <!-- Slider 1 -->
+          <div class="slider min-w-full box-border flex flex-col-reverse xl:flex-row bg-[#ffffff] xl:items-center mt-1 w-full xl:relative xl:h-fit">
+            <div
+              class="left m-2 flex flex-col justify-center max-w-[50rem] items-start xl:z-10 xl:absolute left-14 mg bg-white xl:w-[36rem] xl:px-10 xl:py-6"
+            >
+              <button
+                href="#"
+                class="bg-yellow-500 text-md px-2 py-1 font-semibold m-2"
+              >
+                New
+              </button>
+              <h1 class="text-2xl m-2 font-semibold">Meet Surface Pro</h1>
+              <p class="text-base m-2 h-24 max-w-[36rem]">
+                This laptop's unrivalled flexibility and AI features like Live
+                Captions and Cocreator, enable you to do more than you ever
+                imagined.
+              </p>
+              <button
+                class="m-2 bg-blue-700 text-white text-md font-semibold px-4 py-2"
+              >
+                Learn More
+              </button>
+            </div>
+            <div class="right h-fit w-full">
+              <img
+                class="xl:hidden w-full"
+                src="assets/images/dark-sm.avif"
+                alt="Surface Pro"
+              />
+              <img
+                class="hidden xl:block w-full"
+                src="assets/images/dark-lg.avif"
+                alt="Surface Pro"
+              />
+            </div>
+          </div>
 
-      <div class="carousel">
-        <!-- Slider 1 -->
-        <div
-          class="slider flex flex-col-reverse xl:flex-row m bg-[#ffffff] xl:items-center mt-1 w-full xl:relative xl:h-fit"
-        >
-          <div
-            class="left m-2 flex flex-col justify-center max-w-[50rem] items-start xl:z-10 xl:absolute left-14 mg bg-white xl:w-[36rem] xl:px-10 xl:py-6"
-          >
-            <button
-              href="#"
-              class="bg-yellow-500 text-md px-2 py-1 font-semibold m-2"
+          <!-- Slider 2 -->
+          <div class="slider min-w-full box-border flex flex-col-reverse xl:flex-row bg-[#ffffff] xl:items-center mt-1 w-full xl:relative xl:h-fit" >
+            <div
+              class="left m-2 flex flex-col justify-center max-w-[50rem] items-start xl:z-10 xl:absolute left-14 mg bg-white xl:bg-transparent xl:w-[36rem] xl:px-10 xl:py-6"
             >
-              New
-            </button>
-            <h1 class="text-2xl m-2 font-semibold">Meet Surface Pro</h1>
-            <p class="text-base m-2 h-24 max-w-[36rem]">
-              This laptop's unrivalled flexibility and AI features like Live
-              Captions and Cocreator, enable you to do more than you ever
-              imagined.
-            </p>
-            <button
-              class="m-2 bg-blue-700 text-white text-md font-semibold px-4 py-2"
-            >
-              Learn More
-            </button>
+              <button
+                href="#"
+                class="bg-yellow-500 text-md px-2 py-1 font-semibold m-2"
+              >
+                New
+              </button>
+              <h1 class="text-2xl m-2 font-semibold">Meet Surface Laptop</h1>
+              <p class="text-base m-2 h-24 max-w-[36rem]">
+                Unlock AI features like Live Captions and Cocreator with this
+                exceptionally powerful laptop.
+              </p>
+              <button
+                class="m-2 bg-blue-700 text-white text-md font-semibold px-4 py-2"
+              >
+                Learn More
+              </button>
+            </div>
+            <div class="right h-fit w-full overflow-hidden">
+              <img
+                class="xl:hidden w-full"
+                src="assets/images/light-sm.avif"
+                alt="Surface Laptop"
+              />
+              <img
+                class="hidden xl:block w-full"
+                src="assets/images/light-lg.avif"
+                alt="Surface Laptop"
+              />
+            </div>
           </div>
-          <div class="right h-fit w-full overflow-hidden">
-            <img
-              class="xl:hidden w-full"
-              src="assets/images/dark-sm.avif"
-              alt="Surface Pro"
-            />
-            <img
-              class="hidden xl:block w-full"
-              src="assets/images/dark-lg.avif"
-              alt="Surface Pro"
-            />
-          </div>
+
+
+
+
         </div>
-
-        <!-- Slider 2 -->
-        <div
-          class="slider hidden flex flex-col-reverse xl:flex-row m bg-[#ffffff] xl:items-center mt-1 w-full xl:relative xl:h-fit"
-        >
-          <div
-            class="left m-2 flex flex-col justify-center max-w-[50rem] items-start xl:z-10 xl:absolute left-14 mg bg-white xl:bg-transparent xl:w-[36rem] xl:px-10 xl:py-6"
-          >
-            <button
-              href="#"
-              class="bg-yellow-500 text-md px-2 py-1 font-semibold m-2"
-            >
-              New
-            </button>
-            <h1 class="text-2xl m-2 font-semibold">Meet Surface Laptop</h1>
-            <p class="text-base m-2 h-24 max-w-[36rem]">
-              Unlock AI features like Live Captions and Cocreator with this
-              exceptionally powerful laptop.
-            </p>
-            <button
-              class="m-2 bg-blue-700 text-white text-md font-semibold px-4 py-2"
-            >
-              Learn More
-            </button>
-          </div>
-          <div class="right h-fit w-full overflow-hidden">
-            <img
-              class="xl:hidden w-full"
-              src="assets/images/light-sm.avif"
-              alt="Surface Laptop"
-            />
-            <img
-              class="hidden xl:block w-full"
-              src="assets/images/light-lg.avif"
-              alt="Surface Laptop"
-            />
-          </div>
-        </div>
-
-        <!-- Controls -->
-        <div class="controls py-7 flex justify-center space-x-8 border">
+      </div>
+      <!-- Controls -->
+      <div class="controls py-7 flex justify-center space-x-8 border h-20">
+        <img
+          class="w-4 hover:scale-125 transition-all ml-8 hidden"
+          src="assets/images/play-solid.svg"
+          id="play"
+          alt="Play"
+        />
+        <img
+          class="w-4 hover:scale-125 transition-all"
+          src="assets/images/pause-solid.svg"
+          id="pause"
+          alt="Pause"
+        />
+        <img
+          class="w-3 hover:scale-125 hover:-translate-x-1 transition-all"
+          src="assets/images/chevron-left-solid.svg"
+          id="prev"
+          alt="Previous"
+        />
+        <div class="position flex space-x-8">
           <img
-            class="w-3 ml-8 hidden"
-            src="assets/images/play-solid.svg"
-            id="play"
-            alt="Play"
+            class="w-3"
+            src="assets/images/circle-solid.svg"
+            alt="Indicator"
           />
           <img
             class="w-3"
-            src="assets/images/pause-solid.svg"
-            id="pause"
-            alt="Pause"
-          />
-          <img
-            class="w-3"
-            src="assets/images/chevron-left-solid.svg"
-            id="prev"
-            alt="Previous"
-          />
-          <div class="position flex space-x-8">
-            <img
-              class="w-3"
-              src="assets/images/circle-solid.svg"
-              alt="Indicator"
-            />
-            <img
-              class="w-3"
-              src="assets/images/circle-regular.svg"
-              alt="Indicator"
-            />
-          </div>
-          <img
-            class="w-3 mr-8"
-            src="assets/images/chevron-right-solid.svg"
-            id="next"
-            alt="Next"
+            src="assets/images/circle-regular.svg"
+            alt="Indicator"
           />
         </div>
+        <img
+          class="w-3 hover:scale-125 hover:translate-x-1 transition-all"
+          src="assets/images/chevron-right-solid.svg"
+          id="next"
+          alt="Next"
+        />
       </div>
 
       <div
@@ -353,7 +360,7 @@
       </div>
 
       <div
-        class="cards bg-white grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:px-16"
+        class="cards bg-white grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 lg:px-16"
       >
         <div
           class="card m-2 bg-white shadow-xl drop-shadow flex flex-col items-start"
@@ -454,7 +461,7 @@
       </div>
 
       <div
-        class="game bg-white p-3 my-1 md:relative md:h-[45rem] lg:h-fit lg:w-fit"
+        class="game bg-white p-3 my-1 md:relative md:h-[45rem] lg:h-fit lg:w-full"
       >
         <div class="image md:hidden">
           <img class="w-full" src="assets/images/game-ad-bg-md.avif" alt="" />
@@ -504,7 +511,7 @@
         </div>
 
         <div
-          class="cards bg-white grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:px-16"
+          class="cards bg-white grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 lg:px-16"
         >
           <div
             class="card m-2 bg-white shadow-xl drop-shadow flex flex-col items-start"
