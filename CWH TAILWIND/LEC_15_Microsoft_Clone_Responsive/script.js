@@ -8,6 +8,19 @@ document.addEventListener("DOMContentLoaded", () => {
     menu.classList.toggle("-translate-x-full");    
   });
 
+  am_drop = document.getElementById("am-drop");
+  am_menu = document.getElementById("am-menu");
+
+  am_drop.addEventListener("click", ()=>{
+    am_menu.classList.toggle("scale-0")
+    am_drop.classList.toggle("bg-gray-200")
+  // if (am_menu.contains("scale-0"))
+    // am_menu.classList.add("scale-1")
+  });
+
+
+
+
   const carousel = document.querySelector('.carousel');
   const slides = document.querySelectorAll('.slider');
   const playButton = document.getElementById('play');
